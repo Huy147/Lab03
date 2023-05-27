@@ -5,6 +5,5 @@ import org.springframework.stereotype.Repository;
 import trinhconghuy.Lab03.entity.Book;
 
 @Repository
-
 public interface IBookRepository extends JpaRepository<Book, Long> {
 }

@@ -4,6 +4,17 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/Lab03/src/main/resources/static/css" />
       <excludeFolder url="file://$MODULE_DIR$/Lab03/src/main/resources/templates/book" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab03/src/main/resources/static/js" />
     </content>
+  </component>
+  <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping />
+        <naming-strategy-map />
+      </configuration>
+    </facet>
   </component>
 </module>
