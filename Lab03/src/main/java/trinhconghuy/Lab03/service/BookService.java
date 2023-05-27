@@ -12,19 +12,23 @@ public class BookService {
     @Autowired
     private IBookRepository bookRepository;
 
-    public List<Book> getAll() {
+    public List<Book> getAllBooks() {
         return bookRepository.findAll();
     }
 
-    public void save(Book product) {
-        bookRepository.save(product);
-    }
-
-    public Book get(long id) {
+    public Book getBookById(Long id) {
         return bookRepository.findById(id).orElse(null);
     }
 
-    public void delete(long id) {
+    public  void addBook(Book book) {
+        bookRepository.save(book);
+    }
+
+    public void  deleteBook(Long id) {
         bookRepository.deleteById(id);
+    }
+
+    public void updateBook(Book book) {
+        bookRepository.save(book);
     }
 }
